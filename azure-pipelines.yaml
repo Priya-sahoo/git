@@ -1,0 +1,20 @@
+trigger:
+  - main  # Trigger pipeline on commits to the main branch
+
+pool:
+  vmImage: 'ubuntu-latest'  # Linux VM image
+
+steps:
+  - script: echo "Running on Linux"
+    displayName: 'Print greeting'
+
+  - script: |
+      echo "Updating system..."
+      sudo apt-get update
+      sudo apt-get install -y curl
+    displayName: 'Update packages and install curl'
+
+  - script: |
+      echo "Running custom logic..."
+      # Your commands here
+    displayName: 'Run custom script'
