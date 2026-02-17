@@ -1,1 +1,1 @@
-checking for merge conflicts
+checking for merge conflicts in feature2 branch
