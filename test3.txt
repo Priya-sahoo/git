@@ -1,0 +1,2 @@
+checking for merge conflicts in main branch
+checking for merge conflicts in feature2 branch
